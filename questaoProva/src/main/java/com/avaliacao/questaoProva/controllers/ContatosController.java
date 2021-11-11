@@ -11,6 +11,7 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import java.net.URI;
 import java.util.List;
 
+@CrossOrigin
 @RestController
 @RequestMapping(value = "/contatos")
 public class ContatosController {
@@ -46,7 +47,7 @@ public class ContatosController {
         return ResponseEntity.ok(service.update(id, update));
     }
 
-    @DeleteMapping(path = "/{id}")
+    @DeleteMapping(path = "/delete/{id}")
     public ResponseEntity<String> delete(@PathVariable Long id){
         service.delete(id);
         return ResponseEntity.ok("Contato" + id + " deletado!");
