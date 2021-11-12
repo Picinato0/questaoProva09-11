@@ -26,16 +26,16 @@ function Create(){
                 </Link> */}
                 <ul>
                     <li>
-                        <input onChange={value => setNome(value.target.value)} value={contatoNome} className="criaContato-input" type="text" placeholder="Nome"></input>
+                        <input name="nome-input" onChange={value => setNome(value.target.value)} value={contatoNome} className="criaContato-input" type="text" placeholder="Nome"></input>
                     </li>
                     <li>
-                        <input onChange={value => setTelefone(value.target.value)} value={contatoTelefone} className="criaContato-input" type="text" placeholder="Telefone"></input>
+                        <input name="telefone-input" onChange={value => setTelefone(value.target.value)} value={contatoTelefone} className="criaContato-input" type="text" placeholder="Telefone"></input>
                     </li>
                     <li>
-                        <input onChange={value => setEmail(value.target.value)} value={contatoEmail} className="criaContato-input" type="text" placeholder="Email"></input>
+                        <input name="email-input" onChange={value => setEmail(value.target.value)} value={contatoEmail} className="criaContato-input" type="text" placeholder="Email"></input>
                     </li>
                     <li>
-                        <button id="criaContato-submit" type="submit" className="criaContato-input">Submit</button>
+                        <button name="criaContato-submit" type="submit" className="criaContato-input">Submit</button>
                     </li>
                 </ul>
             </form>
